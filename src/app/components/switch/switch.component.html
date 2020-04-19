@@ -1,0 +1,9 @@
+<button type="button" class="btn btn-outline-dark"
+(click)="item = cambio()">Cambiar switch</button>
+<br>
+<br>
+<div [ngSwitch]="item">    
+      <div class="alert alert-{{item}}" role="alert">
+        A simple success alert—check it out!
+      </div>        
+</div>
